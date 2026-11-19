@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hafeey & Miea | Our Story</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="stars">
+    <span>✦</span><span>✧</span><span>✦</span>
+    <span>✧</span><span>·</span><span>✦</span>
+    <span>✧</span><span>✦</span>
+  </div>
+
+  <!-- INTRO -->
+  <section id="intro" class="screen intro active">
+    <div class="intro-card">
+      <div class="mini-heart">♡</div>
+      <p class="pixel-small">A LITTLE PIXEL LOVE STORY</p>
+      <h1>HAFEEY <span>&</span> MIEA</h1>
+      <p class="intro-description">
+        It all started with a Chemistry assignment...
+      </p>
+      <div class="intro-decoration">✦　♡　✦</div>
+      <button id="startBtn" class="pixel-button">
+        START OUR STORY
+      </button>
+      <p class="intro-footer">Press start to enter our little world</p>
+    </div>
+  </section>
+
+  <!-- MAIN -->
+  <section id="main" class="screen main-screen">
+
+    <header class="navbar">
+      <div class="logo">H <span>♡</span> M</div>
+      <div class="nav-title">OUR LITTLE WORLD</div>
+      <button id="musicBtn" class="music-button">♫ MUSIC ON</button>
+    </header>
+
+    <main class="container">
+
+      <div class="heading">
+        <p class="pixel-small">A STORY OF TWO HEARTS</p>
+        <h2>Hafeey <span>&</span> Miea</h2>
+        <p>Some beautiful stories begin unexpectedly.</p>
+      </div>
+
+      <!-- PIXEL SCENE -->
+      <div id="stage" class="stage scene-0">
+
+        <div class="scene-heading" id="sceneLabel">
+          CHAPTER 01 · THE CHEMISTRY ASSIGNMENT
+        </div>
+
+        <div class="sun"></div>
+        <div class="moon"></div>
+
+        <div class="cloud cloud-a"></div>
+        <div class="cloud cloud-b"></div>
+
+        <div class="scene-world">
+
+          <!-- HAFEEY -->
+          <div class="character hafeey" id="hafeey">
+            <div class="name-tag">HAFEEY</div>
+            <div class="hair"></div>
+            <div class="face">
+              <i class="eye left-eye"></i>
+              <i class="eye right-eye"></i>
+              <i class="cheek left-cheek"></i>
+              <i class="cheek right-cheek"></i>
+              <i class="mouth"></i>
+            </div>
+            <div class="body"></div>
+            <div class="arm left-arm"></div>
+            <div class="arm right-arm"></div>
+            <div class="leg left-leg"></div>
+            <div class="leg right-leg"></div>
+          </div>
+
+          <!-- MIEA -->
+          <div class="character miea" id="miea">
+            <div class="name-tag">MIEA</div>
+            <div class="hair"></div>
+            <div class="face">
+              <i class="eye left-eye"></i>
+              <i class="eye right-eye"></i>
+              <i class="cheek left-cheek"></i>
+              <i class="cheek right-cheek"></i>
+              <i class="mouth"></i>
+            </div>
+            <div class="body"></div>
+            <div class="arm left-arm"></div>
+            <div class="arm right-arm"></div>
+            <div class="leg left-leg"></div>
+            <div class="leg right-leg"></div>
+          </div>
+
+          <div id="sceneProp" class="scene-prop">⚗</div>
+          <div id="floatingHeart" class="floating-heart">♡</div>
+        </div>
+
+        <div class="ground"></div>
+        <div class="rain"></div>
+        <div class="sparkles">✦　✧　✦　✧</div>
+      </div>
+
+      <!-- DIALOGUE -->
+      <div class="dialogue-card">
+        <div class="dialogue-header">
+          <span id="speaker">NARRATOR</span>
+          <span id="chapterCount">01 / 06</span>
+        </div>
+
+        <p id="dialogue">
+          It all started with a Chemistry group assignment...
+        </p>
+
+        <div class="dialogue-buttons">
+          <button id="prevBtn" class="secondary-button">← BACK</button>
+          <button id="nextBtn" class="pixel-button">NEXT SCENE →</button>
+        </div>
+      </div>
+
+      <!-- CHAPTERS -->
+      <div class="chapters">
+        <p class="pixel-small">OUR STORY CHAPTERS</p>
+        <div id="chapterDots" class="chapter-dots">
+          <span class="chapter-dot active">01</span>
+          <span class="chapter-dot">02</span>
+          <span class="chapter-dot">03</span>
+          <span class="chapter-dot">04</span>
+          <span class="chapter-dot">05</span>
+          <span class="chapter-dot">06</span>
+        </div>
+      </div>
+
+      <!-- MUSIC PLAYER -->
+      <section class="music-card">
+        <p class="pixel-small">♫ OUR SOUNDTRACK ♫</p>
+        <h3>Teruna & Dara</h3>
+        <p class="muted">A little song for our little story.</p>
+
+        <audio id="song" src="teruna-dara.mp3" preload="metadata"></audio>
+
+        <div class="player">
+          <button id="playBtn" class="play-button">▶</button>
+          <div class="track">
+            <input id="seekBar" type="range" min="0" max="100" value="0">
+            <div class="time">
+              <span id="currentTime">0:00</span>
+              <span id="duration">0:00</span>
+            </div>
+          </div>
+        </div>
+
+        <p id="audioStatus" class="muted">
+          Your soundtrack is waiting ♡
+        </p>
+      </section>
+
+      <!-- LYRICS DISPLAY -->
+      <section class="lyrics-card">
+        <p class="pixel-small">♫ SING ALONG ♫</p>
+        <div id="lyricSection">INTRO</div>
+        <p id="lyricText">♪ Let our story begin... ♡</p>
+        <p id="lyricNext">The next part is waiting...</p>
+      </section>
+
+      <footer>
+        <p>Made with love ♡</p>
+        <p>HAFEEY & MIEA · FOREVER IN PIXELS</p>
+      </footer>
+
+    </main>
+  </section>
+
+  <!-- ENDING -->
+  <section id="ending" class="screen ending">
+    <div class="intro-card">
+      <div class="mini-heart">♥</div>
+      <p class="pixel-small">OUR STORY CONTINUES...</p>
+      <h1>THE END <span>?</span></h1>
+      <p class="intro-description">
+        Maybe this is not the end. Maybe it is just another beginning.
+      </p>
+      <button id="replayBtn" class="pixel-button">
+        PLAY OUR STORY AGAIN ↻
+      </button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
